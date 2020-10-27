@@ -57,20 +57,26 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+/* body */
+
 .page {
   background-color: var(--primari-background-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+
 /* header */
+
 .header {
   background-color: var(--wite);
 }
 .header-container,
 .container {
-  margin: 0 auto;
-  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   outline: 1px solid orange;
@@ -79,6 +85,12 @@ p {
   display: flex;
   align-items: center;
 }
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+/* logo header */
 
 .logo-header {
   display: inline-block;
@@ -89,7 +101,9 @@ p {
   line-height: 1.19;
   text-decoration: none;
 }
-
+.logo-top {
+  color: var(--accent-text-first);
+}
 .site-nav,
 .contact-link {
   font-family: Roboto;
@@ -98,20 +112,19 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.logo-top {
-  color: var(--accent-text-first);
-}
-.contact-link {
-  display: flex;
-}
+
 .site-nav {
   display: flex;
+  margin-left: 40px;
 }
 .site-nav .item {
-  background-color: orangered;
 }
 .site-nav .item + .item {
   margin-left: 50px;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-text-first);
 }
 
 .nav-link {
@@ -120,15 +133,18 @@ p {
   padding-bottom: 32px;
   display: block;
 }
-.site-nav a:hover,
-.site-nav a:focus {
-  color: var(--accent-text-first);
-}
+
 .nav-link.current {
   color: var(--accent-text-first);
 }
-.contact-link a,
-p {
+.contact-link {
+  display: flex;
+  margin-left: auto;
+}
+.contact-link .item + .item {
+  margin-left: 50px;
+}
+.contact-link .link {
   color: var(--title-text-color);
   text-decoration: none;
 }
@@ -182,6 +198,13 @@ p {
 /* section */
 .section {
   background-color: var(--acctnt-background-color);
+}
+/* section advantages */
+p {
+  color: var(--title-text-color);
+}
+.feature-list {
+  display: flex;
 }
 .advantages {
   font-family: Roboto;
